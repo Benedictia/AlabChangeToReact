@@ -1,9 +1,9 @@
-// components/Main.js
+
 import React from 'react';
-import Article from './Article';  // Import Article component
+import Article from './Article';  
 
 function Main() {
-  // Example content for articles
+
   const articles = [
     {
       title: "On the Street in Brooklyn",
