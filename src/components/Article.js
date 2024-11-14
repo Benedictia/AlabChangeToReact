@@ -1,4 +1,4 @@
-// components/Article.js
+
 import React from 'react';
 
 function Article({ title, content, imageUrl }) {
