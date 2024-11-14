@@ -1,38 +1,173 @@
-.App {
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML Element - Border on Left */
+html {
+  border-left: 5px solid lightgray;
+}
+
+/* Body Styles */
+body {
+  font-family: sans-serif;
+  min-height: 100vh;  
+  max-width: 1000px;
+  margin: 0 auto; 
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+
+  color: white;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: tomato;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h2 {
+  font-size: 3.5rem;
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navigation Bar Styles */
+nav {
+  margin-top: 20px;
+}
+
+.nav.top-nav {
+  list-style-type: none;  
+  padding: 0;
+  display: flex;           
+  justify-content: space-evenly;  
+  align-items: center;    
+  margin: 0;
+}
+
+.nav.top-nav li {
+  margin: 0 15px;   
+}
+
+.nav.top-nav a {
+  text-decoration: none;
+  color: lightgray;  
+  font-size: 1.2rem;  
+  padding: 0.5rem 1rem;  
+
+}
+
+.nav.top-nav a:hover {
+  color: #f39c12;  
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem 2rem;
+}
+
+/* Article Styles */
+article {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+article header {
+  margin-bottom: 15px;
+}
+
+article h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  position: relative;
+}
+
+/* Drop Cap Style on First Letter of Article Paragraph */
+article p::first-letter {
+  font-size: 2.5rem;
+  color: lightgray;
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* 'Continues...' Link Style */
+a.continues {
+  text-align: right;
+  font-weight: bold;
+  color: tomato;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Image Styles */
+article img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
   color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+footer p {
+  font-size: 0.9rem;
+  color: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  header h2 {
+      font-size: 1.2rem;
+  }
+
+  .nav.top-nav li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .nav.top-nav a {
+      font-size: 1rem;
+  }
+
+  article h2 {
+      font-size: 1.5rem;
+  }
+
+  article p {
+      font-size: 0.95rem;
   }
 }
+
+
+
